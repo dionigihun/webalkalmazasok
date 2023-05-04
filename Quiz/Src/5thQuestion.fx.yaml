@@ -1,0 +1,45 @@
+"'5thQuestion' As screen":
+    BackgroundImage: ='Névtelen terv (1)'
+
+    Button1_5 As button:
+        Height: =70
+        OnSelect: |-
+            =Reset(Radio1);
+            If(Toggle1_1.Value = false, Set(Score,Score+20));
+            Navigate(Finish);
+        Size: =24
+        Text: ="Finish"
+        Width: =280
+        X: =183
+        Y: =960
+        ZIndex: =1
+
+    Toggle1_1 As toggleSwitch:
+        FalseText: ="False"
+        Height: =63
+        Size: =21
+        TrueFill: =Color.DarkGreen
+        TrueText: ="True"
+        Width: =250
+        X: =198
+        Y: =732
+        ZIndex: =2
+
+    Label3_1 As label:
+        Height: =86
+        Size: =21
+        Text: ="Mushrooms need sunlight to grow"
+        Width: =448
+        X: =99
+        Y: =597
+        ZIndex: =3
+
+    Label4 As label:
+        Height: =70
+        Size: =21
+        Text: =Toggle1_1.Value
+        Width: =560
+        X: =43
+        Y: =827
+        ZIndex: =4
+

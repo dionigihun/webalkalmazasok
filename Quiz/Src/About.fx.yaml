@@ -1,0 +1,33 @@
+About As screen:
+    BackgroundImage: ='Névtelen terv (1)'
+
+    Button1_7 As button:
+        Height: =70
+        OnSelect: |
+            =Reset(Radio1);
+            Navigate(Finish, ScreenTransition.CoverRight);
+        Size: =24
+        Text: ="Back"
+        Width: =280
+        X: =183
+        Y: =960
+        ZIndex: =1
+
+    Image3 As image:
+        Height: =320
+        Image: ='pngwing.com'
+        Width: =320
+        X: =163
+        Y: =598
+        ZIndex: =2
+
+    Label9 As label:
+        Align: =Align.Center
+        Height: =96
+        Size: =21
+        Text: ="The software was made by Dénes Oláh for Web applications course!"
+        Width: =560
+        X: =43
+        Y: =487
+        ZIndex: =3
+
