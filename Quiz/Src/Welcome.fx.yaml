@@ -5,7 +5,7 @@ Welcome As screen:
         Height: =70
         OnSelect: |
             =Reset(Radio1);
-            Navigate('1stQuestion', ScreenTransition.CoverRight);
+            Navigate('1stQuestion', ScreenTransition.Fade;)
         Size: =24
         Text: ="Start"
         Width: =280
