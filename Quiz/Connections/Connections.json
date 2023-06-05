@@ -1,0 +1,27 @@
+{
+  "a3a6a22d-d371-4622-b52e-ba0fe275fb7b": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://unineumannhu-my.sharepoint.com/personal/gdgo0c_hallgato_uni-neumann_hu": {
+        "dataSources": {
+          "userRegistration": {
+            "tableName": "6187fc2b-6e78-4eb1-9e30-9dcdc25f9350"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "userRegistration"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a3a6a22d-d371-4622-b52e-ba0fe275fb7b"
+  }
+}

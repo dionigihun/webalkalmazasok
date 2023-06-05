@@ -1,0 +1,67 @@
+Finish As screen:
+    BackgroundImage: ='Névtelen terv (1)'
+
+    startOverButton As button:
+        Height: =70
+        OnSelect: |
+            =Reset(answersRadio1st);
+            Navigate('1stQuestion', ScreenTransition.Cover);
+        Size: =24
+        Text: ="Start over"
+        Width: =170
+        X: =123
+        Y: =960
+        ZIndex: =1
+
+    scoreText As label:
+        Height: =52
+        Size: =21
+        Text: |-
+            ="Your score number is:"
+        Width: =305
+        X: =170
+        Y: =463
+        ZIndex: =2
+
+    scoreNumberText As label:
+        Align: =Align.Center
+        Color: =RGBA(168, 0, 0, 1)
+        Height: =113
+        Size: =30
+        Text: =Score
+        Width: =88
+        X: =278
+        Y: =515
+        ZIndex: =3
+
+    resultText As label:
+        Align: =Align.Center
+        Color: =RGBA(168, 0, 0, 1)
+        Height: =71
+        Size: =30
+        Text: |-
+            =If(Score>=80, "Well done :)", Score<=80, "Maybe next time :(")
+        Width: =563
+        X: =40
+        Y: =870
+        ZIndex: =4
+
+    aboutButton As button:
+        Height: =70
+        OnSelect: |
+            =Navigate(About, ScreenTransition.Cover);
+        Size: =24
+        Text: ="About"
+        Width: =170
+        X: =359
+        Y: =960
+        ZIndex: =5
+
+    images As image:
+        Height: =250
+        Image: =Switch(Score,100,happy,80,happy,60,neutral,40,sad,20,sad,0,sad)
+        Width: =253
+        X: =196
+        Y: =620
+        ZIndex: =6
+
