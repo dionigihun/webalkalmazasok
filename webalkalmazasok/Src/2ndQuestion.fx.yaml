@@ -1,0 +1,43 @@
+"'2ndQuestion' As screen":
+    BackgroundImage: ='Névtelen terv (1)'
+
+    nextButton2nd As button:
+        Height: =70
+        OnSelect: |-
+            =Reset(answersRadio3rd);
+            If(answersRadio2nd.Selected.Value = "Lima", Set(Score,Score+20));
+            Navigate('3rdQuestion');
+        Size: =24
+        Text: ="Next"
+        Width: =280
+        X: =183
+        Y: =960
+        ZIndex: =1
+
+    answersRadio2nd As radio:
+        Height: =306
+        Items: =["Naples", "Lima", "Moscow", "Rio de Janeiro"]
+        Size: =21
+        Width: =512
+        X: =67
+        Y: =595
+        ZIndex: =2
+
+    verifyingLabel2nd As label:
+        Height: =70
+        Size: =21
+        Text: =answersRadio2nd.Selected.Value  
+        Width: =560
+        X: =43
+        Y: =901
+        ZIndex: =3
+
+    question2nd As label:
+        Height: =70
+        Size: =21
+        Text: ="What is the capital of Peru?"
+        Width: =560
+        X: =43
+        Y: =500
+        ZIndex: =4
+

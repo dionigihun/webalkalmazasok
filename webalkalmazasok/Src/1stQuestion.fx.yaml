@@ -1,0 +1,43 @@
+"'1stQuestion' As screen":
+    BackgroundImage: ='Névtelen terv (1)'
+
+    nextButton1st As button:
+        Height: =70
+        OnSelect: |-
+            =Reset(answersRadio2nd);
+            If(answersRadio1st.Selected.Value = "Valetta", Set(Score,20), Set(Score,0));
+            Navigate('2ndQuestion');
+        Size: =24
+        Text: ="Next"
+        Width: =280
+        X: =183
+        Y: =960
+        ZIndex: =1
+
+    answersRadio1st As radio:
+        Height: =306
+        Items: =["Budapest", "Valetta", "Paris", "London"]
+        Size: =21
+        Width: =512
+        X: =67
+        Y: =595
+        ZIndex: =2
+
+    verifyingLabel As label:
+        Height: =70
+        Size: =21
+        Text: =answersRadio1st.Selected.Value  
+        Width: =560
+        X: =43
+        Y: =901
+        ZIndex: =3
+
+    question1st As label:
+        Height: =70
+        Size: =21
+        Text: ="What is the capital of Malta?"
+        Width: =560
+        X: =43
+        Y: =500
+        ZIndex: =4
+
